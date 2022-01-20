@@ -1,0 +1,76 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body, html{
+    padding: 0;
+    margin: 0
+}
+
+.app{
+    width: 400px;
+    margin: auto;
+    max-width: 100%;
+    border: 1px solid;
+    padding: 0 2rem 2rem 2rem;
+    margin-top: 2rem;
+    background-color: whitesmoke;
+}
+
+.crud-input{
+    border: 0;
+    border-bottom: 3px dashed grey;
+    padding: 0;
+}
+
+.crud-input__label{
+    font-weight: 700;
+}
+
+.crud-input__field{
+    width: 100%;
+    border: 0;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: transparent;
+}
+
+.crud-input__input{
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.crud-list{
+    list-style: none;
+    padding: 0;
+}
+
+.crud-list__item{
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.crud-list__item > * + * {
+    margin-left: 1rem;
+}
+
+.crud-list__item input{
+    width: 2rem;
+    height: 2rem;
+}
+
+.crud-list__item--done label{
+    text-decoration: line-through;
+}
+
+.crud-clear{
+    width: 100%;
+    padding: 0.5rem;
+    background: white;
+    font-size: 1.2rem;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
