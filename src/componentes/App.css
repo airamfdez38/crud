@@ -74,3 +74,8 @@ body, html{
     border: 1px solid grey;
     border-radius: 3px;
 }
+
+.crud-item-button{
+    width: 50px;
+    height: 30px;
+}

@@ -9,7 +9,9 @@ const Read = ({elems, onElemsChange}) => (
                     const updateElems = [...elems];
                     updateElems[i].done = value;
                     onElemsChange(updateElems);
+                    
                 }
+                
             }/>
         ))}
     </ul>

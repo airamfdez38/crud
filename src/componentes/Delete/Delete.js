@@ -13,4 +13,4 @@ const Delete = ({elemToDelete, elems}) => {
     )
 }
 
-export default Delete;
+export default Delete
