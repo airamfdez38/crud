@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './App.css';
 import Create from './Create/Create.js';
-import Read from './Read/Read.js'
+import Read from './Read/Read.js';
+import Delete from './Delete/Delete.js'
 
 const initialElems = [
     { 
@@ -31,8 +32,9 @@ const App = () => {
     <h1>CRUD</h1>
     <Create  onNewElem = {elem => setElems([...elems, elem])}/>
     <Read elems = {elems} onElemsChange = {elems => setElems(elems)}/>
-    <button className = "crud-clear" type = "button" onClick = {() => setElems(elems.filter(elem => !elem.done))}>Borrar</button>
-
+    <Delete elems = {elems} elemToDelete = {elem => setElems(elem)}/>
+   
+   
 </div>
   )
 
